@@ -121,8 +121,6 @@ function GetPreMonthDay(date, monthNum) {
 	return t2;
 }
 
-function 
-
 
 
 module.exports = {

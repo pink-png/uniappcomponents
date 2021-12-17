@@ -12,6 +12,9 @@
 			return {
 			
 			};
+		},
+		onLoad() {
+
 		}
 	}
 </script>

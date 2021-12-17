@@ -16,7 +16,10 @@
 			"path": "pages/my/my",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO" // 将回弹属性关掉
+				}
 			}
 
 		}
