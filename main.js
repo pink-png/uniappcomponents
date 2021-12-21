@@ -69,26 +69,31 @@ Vue.component('GsqTabbar', GsqTabbar) //自定义tabbar
 Vue.component('HFromAlert', HFromAlert) //可输入提交弹框
 Vue.component('UniAddressSelector', UniAddressSelector) //城市列表选择需要配置数据
 Vue.component('MarkSlideList', MarkSlideList) //列表滑动操作      - 支付宝小程序不支持
+
 Vue.component('MingPop', MingPop) //弹框   - onReady生命周期才能直接弹窗
 Vue.component('Vtabs', Vtabs) // 高级tab列表滑动可各种拓展
 Vue.component('uniSwipeAction', uniSwipeAction) //滑动列表外壳
 Vue.component('uniSwipeActionItem', uniSwipeActionItem) //滑动列表子项
 Vue.component('unipopup', unipopup) //弹框     - 需依赖 uni-transition
+
 Vue.component('unisection', unisection) //就一个数据展示而已
 Vue.component('MxDatePicker', MxDatePicker) //时间选择器
 Vue.component('PickerDate', PickerDate) //时间选择器
 Vue.component('KXDateTime', KXDateTime) //时间选择 年月日时分    - 需依赖 uni-popup
 Vue.component('GsqSwipeAction', GsqSwipeAction) //多功能滑动组件(还在开发中，支持最简单的滑动删除)
+
 Vue.component('GsqTabList', GsqTabList) // 左右滑动tab列表
 Vue.component('MpvueCitypicker', MpvueCitypicker) //picker-view省市区选择
 Vue.component('Animation', Animation) // 只支持H5  transition
 Vue.component('BetterSticky', BetterSticky) //只支持H5 
 Vue.component('BoboMessage', BoboMessage) //头部消息提示 succsee err info warn   暂支持4种情况
+
 Vue.component('CanvasLove', CanvasLove) // 画布
 Vue.component('ChunleiVideo', ChunleiVideo) //视频播放器
 Vue.component('DigitJump', DigitJump) //小到大定时器
 Vue.component('DragBall', DragBall) //自定义拖动容器
 Vue.component('LinnianCountDown', LinnianCountDown) // 天 时 分 秒 定时器
+
 Vue.component('LuPopupWrapper', LuPopupWrapper)
 Vue.component('PyhGoodsSwiper', PyhGoodsSwiper) // 列表滑动展示
 Vue.component('SsCalendar', SsCalendar) //日历只显示当前月当天
