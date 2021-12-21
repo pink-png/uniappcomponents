@@ -1,28 +1,28 @@
 <template>
-	<div class="mpvue-picker">
-		<div :class="{'pickerMask':showPicker}" @click="maskClick" catchtouchmove="true"></div>
-		<div class="mpvue-picker-content " :class="{'mpvue-picker-view-show':showPicker}">
-			<div class="mpvue-picker__hd" catchtouchmove="true">
-				<div class="mpvue-picker__action" @click="pickerCancel">取消</div>
-				<div class="mpvue-picker__action" :style="{color:themeColor}" @click="pickerConfirm">确定</div>
-			</div>
+	<view class="mpvue-picker">
+		<view :class="{'pickerMask':showPicker}" @click="maskClick" catchtouchmove="true"></view>
+		<view class="mpvue-picker-content " :class="{'mpvue-picker-view-show':showPicker}">
+			<view class="mpvue-picker__hd" catchtouchmove="true">
+				<view class="mpvue-picker__action" @click="pickerCancel">取消</view>
+				<view class="mpvue-picker__action" :style="{color:themeColor}" @click="pickerConfirm">确定</view>
+			</view>
 			<picker-view indicator-style="height: 40px;" class="mpvue-picker-view" :value="pickerValue"
 				@change="pickerChange">
 				<block>
 					<picker-view-column>
-						<div class="picker-item" v-for="(item,index) in provinceDataList" :key="index">{{item.label}}
-						</div>
+						<view class="picker-item" v-for="(item,index) in provinceDataList" :key="index">{{item.label}}
+						</view>
 					</picker-view-column>
 					<picker-view-column>
-						<div class="picker-item" v-for="(item,index) in cityDataList" :key="index">{{item.label}}</div>
+						<view class="picker-item" v-for="(item,index) in cityDataList" :key="index">{{item.label}}</view>
 					</picker-view-column>
 					<picker-view-column>
-						<div class="picker-item" v-for="(item,index) in areaDataList" :key="index">{{item.label}}</div>
+						<view class="picker-item" v-for="(item,index) in areaDataList" :key="index">{{item.label}}</view>
 					</picker-view-column>
 				</block>
 			</picker-view>
-		</div>
-	</div>
+		</view>
+	</view>
 </template>
 
 <script>
