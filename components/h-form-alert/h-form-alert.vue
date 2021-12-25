@@ -8,10 +8,8 @@
 				<view class="aak">
 					<input :type="type" :value="value"  :placeholder="placeholder" :name="name"/>
 				</view>
-				
 			</view>
 			<view class="a_btn">
-				
 				<button form-type="reset" :style="{color:cancelColor}">{{cancelText}}</button>
 				<button form-type="submit" :style="{color:confirmColor}">{{confirmText}}</button>
 			</view>
@@ -65,19 +63,18 @@
 			};
 		},
 		methods: {
-			formSubmit: function(e) {
-				console.log(e)
-				let _formdata = e.detail.value
+			formSubmit(e) {
+				let _formdata = e.detail.value.text
 				this.$emit('confirm',_formdata)
 			},
-			formReset: function(e) {
+			formReset(e) {
 				this.$emit('cancel')
 			}
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 	.a_mask{
 		position: fixed;
 		z-index: 99999;
@@ -103,13 +100,9 @@
 				line-height: 88upx;
 			}
 			.a_input{
-				// background-color: red;
 				padding: 30upx 20upx;
 				font-size: 28upx;
-				// display: flex;
-				// justify-content: space-between;
 				.aak{
-					// background-color: green;
 					input{
 						width: 100%;
 						height: 100%;

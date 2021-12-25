@@ -47,7 +47,7 @@
 			 /**
 			  * 显示省市选择框
 			  */
-			 showsspicker(){
+			 show(){
 			 	this.visible = true
 			 },
 			/*
@@ -72,9 +72,6 @@
 				this.value[1] = selectCityIndex
 								
 				this.$emit('sure',this.selectProvince + '-' +  this.locationCity)				
-								
-				// console.log('province',province)
-				// console.log('city',city)
 			},
 			/**
 			 * 切换省市区
