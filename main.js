@@ -8,8 +8,8 @@ import https from '@/common/request.js'
 Vue.prototype.$https = https
 
 // 注册请求方法
-import * as api from '@/common/api.js'
-Vue.prototype.$api = api
+// import * as api from '@/common/api.js'
+// Vue.prototype.$api = api
 
 // 封装工具方法
 import * as util from '@/common/util.js'
@@ -67,10 +67,12 @@ import unipopup from '@/components/uni-popup/uni-popup.vue'
 import unisection from '@/components/uni-section/uni-section.vue'
 import CodeKeyBoard from '@/components/CodeKeyboard/CodeKeyboard.vue'
 import DialogBox from '@/components/DialogBox/DialogBox.vue'
+import TcolorPicker from '@/components/lu-popup-wrapper/lu-popup-wrapper.vue'
+import GsqGeneralform from '@/components/gsq-Generalform/gsq-Generalform.vue'
 
 Vue.component('GsqCitypicker', GsqCitypicker) //省市区选择
-Vue.component('GsqShengShiPicker',GsqShengShiPicker) //省市选择
-Vue.component('GsqNumberBox',GsqNumberBox) //数字选择器
+Vue.component('GsqShengShiPicker', GsqShengShiPicker) //省市选择
+Vue.component('GsqNumberBox', GsqNumberBox) //数字选择器
 Vue.component('GsqSwipeAction', GsqSwipeAction) //多功能滑动组件(还在开发中，支持最简单的滑动删除)
 Vue.component('GsqHeader', GsqHeader) // 头部通用
 Vue.component('GsqTabbar', GsqTabbar) //自定义tabbar
@@ -81,8 +83,8 @@ Vue.component('Vtabs', Vtabs) // 高级tab列表滑动可各种拓展
 Vue.component('HFromAlert', HFromAlert) //可输入提交弹框
 Vue.component('UniAddressSelector', UniAddressSelector) //城市列表选择需要配置数据
 Vue.component('MarkSlideList', MarkSlideList) //列表滑动操作   - 支付宝小程序不支持
-Vue.component('CodeKeyBoard',CodeKeyBoard) //简易数字键盘
-Vue.component('DialogBox',DialogBox) //弹框
+Vue.component('CodeKeyBoard', CodeKeyBoard) //简易数字键盘
+Vue.component('DialogBox', DialogBox) //弹框
 
 Vue.component('MxDatePicker', MxDatePicker) //多类型时间选择器
 Vue.component('PickerDate', PickerDate) //上下滑动时间选择器
@@ -106,6 +108,9 @@ Vue.component('unisection', unisection) //就一个数据展示而已
 Vue.component('uniSwipeAction', uniSwipeAction) //滑动列表外壳
 Vue.component('uniSwipeActionItem', uniSwipeActionItem) //滑动列表子项
 Vue.component('unipopup', unipopup) //弹框     - 需依赖 uni-transition
+
+Vue.component('TcolorPicker', TcolorPicker) //颜色选择器
+Vue.component('GsqGeneralform', GsqGeneralform) // 多功能表单
 
 const app = new Vue({
 	...App

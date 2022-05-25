@@ -25,10 +25,10 @@
 </template>
 
 <script>
-	import cityData from "@/common/js/citydata.js"
-	import {
-		addDataRecord
-	} from "@/common/data/dataRecord.js"
+	// import cityData from "@/common/js/citydata.js"
+	// import {
+	// 	addDataRecord
+	// } from "@/common/data/dataRecord.js"
 	export default {
 		data() {
 			return {
