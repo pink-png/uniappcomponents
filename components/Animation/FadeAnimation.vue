@@ -3,11 +3,6 @@
     <slot></slot>
   </transition>
 </template>
-<script>
-  export default{
-    name: 'FadeAnimation'
-  }
-</script>
 <style scoped lang="stylus">
   .v-enter, .v-leave-to
     opacity 0

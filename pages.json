@@ -3,12 +3,15 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "自定义组件列表"
+				"navigationBarTitleText": "自定义组件列表",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO" // 将回弹属性关掉
+				}
 			}
 		}, {
-			"path": "pages/about/about",
+			"path": "pages/animation/animation",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "动画",
 				"enablePullDownRefresh": false
 			}
 
@@ -21,26 +24,43 @@
 					"allowsBounceVertical": "NO" // 将回弹属性关掉
 				}
 			}
-
+		}, {
+			"path": "pages/zujian/zujian",
+			"style": {
+				"navigationBarTitleText": "组件",
+				"enablePullDownRefresh": false
+			}
+		},
+		
+		// 组件的路径
+		{
+			"path": "pages/component/GsqHeader",
+			"style": {
+				"navigationBarTitleText": "头部通用",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/component/Animation",
+			"style": {
+				"navigationBarTitleText": "Animation",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/component/GsqCitypicker",
+			"style": {
+				"navigationBarTitleText": "省市区选择",
+				"enablePullDownRefresh": false
+			}
 		}
-	    ,{
-            "path" : "pages/zujian/zujian",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "组件",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-
-
 	"tabBar": {
 		"color": "#C3C3C3",
 		"selectedColor": "#FC5D53",
@@ -52,8 +72,8 @@
 				"text": "组件列表"
 			},
 			{
-				"pagePath": "pages/about/about",
-				"text": "测试中"
+				"pagePath": "pages/animation/animation",
+				"text": "动画库"
 			},
 			{
 				"pagePath": "pages/my/my",

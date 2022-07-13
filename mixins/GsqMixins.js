@@ -79,7 +79,7 @@ export default {
 					
 					let urlindex = {
 						'home': '/pages/index/index.vue',
-						'about': '/pages/about/about.vue' ,
+						'about': '/pages/animation/animation.vue' ,
 						'my': '/pages/my/my.vue'
 					}
 					
