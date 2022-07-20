@@ -1,5 +1,10 @@
 <template>
 	<view class="container">
+		<circle-progress-bar :pro="0.36">
+			<view class="">
+				36%
+			</view>
+		</circle-progress-bar>
 	</view>
 </template>
 

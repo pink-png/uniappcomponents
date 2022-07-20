@@ -69,7 +69,10 @@ import CodeKeyBoard from '@/components/CodeKeyboard/CodeKeyboard.vue'
 import DialogBox from '@/components/DialogBox/DialogBox.vue'
 import TcolorPicker from '@/components/lu-popup-wrapper/lu-popup-wrapper.vue'
 import GsqGeneralform from '@/components/gsq-Generalform/gsq-Generalform.vue'
+import GsqPassworldInputDiy from '@/components/gsq-passworldinput-diy/gsq-passworldinput-diy.vue'
 
+
+Vue.component('GsqPassworldInputDiy',GsqPassworldInputDiy) // 自定义密码输入框 仅限实现逻辑
 Vue.component('GsqCitypicker', GsqCitypicker) //省市区选择
 Vue.component('GsqShengShiPicker', GsqShengShiPicker) //省市选择
 Vue.component('GsqNumberBox', GsqNumberBox) //数字选择器

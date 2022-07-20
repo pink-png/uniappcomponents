@@ -1,15 +1,19 @@
 <template>
-	<scroll-view scroll-y class="scrollY">
+	<!-- <scroll-view scroll-y class="scrollY">
 		<view class="scrollYitem" v-for="(item,index) in Componentname" @click="navTabComponent(item)">
 			{{item.ZH}}
 		</view>
-	</scroll-view>
+	</scroll-view> -->
+	
+	<gsq-passworldinput-diy>
+	</gsq-passworldinput-diy>
 </template>
 <script>
 	export default {
 		data() {
 			return {
 				Componentname: [
+					{EN: 'GsqPassworldInputDiy',ZH: '自定义密码输入框'},
 					{EN: 'GsqHeader',ZH: '头部通用'},
 					{EN: 'Animation',ZH: '只支持H5  transition'},
 					{EN: 'GsqCitypicker',ZH: '省市区选择'},
