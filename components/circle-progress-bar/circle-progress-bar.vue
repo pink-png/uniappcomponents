@@ -14,9 +14,10 @@
 				<view class="left" :style="{
 					clip: `rect(0px, ${halfSize + cunit}, ${size + cunit}, 0px)`
 				}">
+				<!-- clip: isshow? `rect(0px, ${size + cunit}, ${size + cunit}, ${halfSize + cunit})` : '',/ -->
 					<view class="inner" :style="{
 						background: border_color,
-						clip: `rect(0px, ${size + cunit}, ${size + cunit}, ${halfSize + cunit})`,
+						clip: `rect(0px, ${size + cunit}, ${size + cunit}, ${halfSize + cunit})` ,
 						transform: `rotate(${left_deg}deg)`,
 						transition: animate ? `all ${left_time}ms` : '',
 						'transition-timing-function': (first == 'left' ? 'ease-in' : 'ease-out')
@@ -115,6 +116,7 @@
 		},
 		data() {
 			return {
+				isshow : false,
 				firstLoad: true,
 				cur_pro: 0,
 				left_deg: 0,

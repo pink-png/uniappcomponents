@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<circle-progress-bar :pro="0.36">
+		<circle-progress-bar :pro.sync="0.36">
 			<view class="">
 				36%
 			</view>

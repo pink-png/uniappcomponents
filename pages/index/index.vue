@@ -4,15 +4,24 @@
 			{{item.ZH}}
 		</view>
 	</scroll-view> -->
+	<view >
+		<circle percent="60">
+			<view style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;">
+				60%
+			</view>
+		</circle>
+	</view>
 	
-	<gsq-passworldinput-diy>
-	</gsq-passworldinput-diy>
 </template>
 <script>
 	export default {
 		data() {
 			return {
+				count : 0,
+				countxxx : this.count / 100,
 				Componentname: [
+					{EN: 'circle',ZH: '进度圆全端可用'},
+					{EN: 'cCircle',ZH: '进度圆小程序无效'},
 					{EN: 'GsqPassworldInputDiy',ZH: '自定义密码输入框'},
 					{EN: 'GsqHeader',ZH: '头部通用'},
 					{EN: 'Animation',ZH: '只支持H5  transition'},
@@ -70,7 +79,14 @@
 				}
 				
 			}
+		},
+		onLoad() {
+			setInterval(()=>{
+				if (this.count >= 100) return 
+				this.count+=10
+			},1000)
 		}
+		
 	}
 </script>
 
@@ -92,5 +108,13 @@
 		background-color: #fff;
 		border-radius: 60rpx;
 		margin: 20rpx auto;
+	}
+	
+	
+	.img{
+		position: fixed;
+		top: 100rpx;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 </style>

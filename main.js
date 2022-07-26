@@ -70,8 +70,15 @@ import DialogBox from '@/components/DialogBox/DialogBox.vue'
 import TcolorPicker from '@/components/lu-popup-wrapper/lu-popup-wrapper.vue'
 import GsqGeneralform from '@/components/gsq-Generalform/gsq-Generalform.vue'
 import GsqPassworldInputDiy from '@/components/gsq-passworldinput-diy/gsq-passworldinput-diy.vue'
+import GsqSwitchDiy from '@/components/gsq-switch-diy/gsq-switch-diy.vue'
+import cCircle from "@/components/Your_Exios-Circle/Your_Exios-Circle.vue"
+import Circle from "@/components/circle/circle.vue"
 
 
+
+Vue.component('Circle',Circle) // 进度环 全部可用
+Vue.component('cCircle',cCircle) // 进度环 不支持小程序
+Vue.component('GsqSwitchDiy',GsqSwitchDiy) // switch diy 颜色
 Vue.component('GsqPassworldInputDiy',GsqPassworldInputDiy) // 自定义密码输入框 仅限实现逻辑
 Vue.component('GsqCitypicker', GsqCitypicker) //省市区选择
 Vue.component('GsqShengShiPicker', GsqShengShiPicker) //省市选择
@@ -84,38 +91,29 @@ Vue.component('BoboMessage', BoboMessage) //头部消息提示 succsee err info 
 Vue.component('MingPop', MingPop) //弹框1   - onReady生命周期才能直接弹窗
 Vue.component('Vtabs', Vtabs) // 高级tab列表滑动可各种拓展
 Vue.component('HFromAlert', HFromAlert) //可输入提交弹框
-
-
 Vue.component('UniAddressSelector', UniAddressSelector) //城市列表选择需要配置数据
 Vue.component('MarkSlideList', MarkSlideList) //列表滑动操作   - 支付宝小程序不支持
 Vue.component('CodeKeyBoard', CodeKeyBoard) //简易数字键盘
 Vue.component('DialogBox', DialogBox) //弹框2
-
 Vue.component('MxDatePicker', MxDatePicker) //多类型时间选择器
 Vue.component('PickerDate', PickerDate) //上下滑动时间选择器
 Vue.component('KXDateTime', KXDateTime) //时间选择 年月日时分    - 需依赖 uni-popup
 Vue.component('LinnianCountDown', LinnianCountDown) // 天 时 分 秒 定时器
 Vue.component('SsCalendar', SsCalendar) //日历只显示当前月当天
-
-
 Vue.component('Animation', Animation) // 只支持H5  transition
 Vue.component('BetterSticky', BetterSticky) //只支持H5 
 Vue.component('CanvasLove', CanvasLove) // 画布
 Vue.component('ChunleiVideo', ChunleiVideo) //视频播放器
 Vue.component('DigitJump', DigitJump) //小到大定时器
 Vue.component('DragBall', DragBall) //自定义拖动容器
-
 Vue.component('LuPopupWrapper', LuPopupWrapper)
 Vue.component('PyhGoodsSwiper', PyhGoodsSwiper) // 列表滑动展示
 Vue.component('TkiQrcode', TkiQrcode) //H5生成二维码
-
-
 Vue.component('UploadImages', UploadImages) //uniapp 上传图片到服务器
 Vue.component('unisection', unisection) //就一个数据展示而已
 Vue.component('uniSwipeAction', uniSwipeAction) //滑动列表外壳
 Vue.component('uniSwipeActionItem', uniSwipeActionItem) //滑动列表子项
 Vue.component('unipopup', unipopup) //弹框     - 需依赖 uni-transition
-
 Vue.component('TcolorPicker', TcolorPicker) //颜色选择器
 Vue.component('GsqGeneralform', GsqGeneralform) // 多功能表单
 

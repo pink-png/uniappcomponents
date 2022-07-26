@@ -15,12 +15,13 @@
 		methods: {
 			getvalue(e) {
 				console.log('e', e)
-				let data = e.detail.value
+				const data = e.detail.value
+				const subdata = data.substr(data.length - 1, 1)
 				this.value = data.replace(/./g, '*')
-				if (data.substr(data.length - 1, 1) == '*' || data.substr(data.length - 1, 1) == '') {
+				if (subdata == '*' || subdata == '') {
 					this.fromvalue.pop()
 				} else {
-					this.fromvalue.push(data.substr(data.length - 1, 1))
+					this.fromvalue.push(subdata)
 				}
 				console.log('fromvalue', this.fromvalue)
 			}
