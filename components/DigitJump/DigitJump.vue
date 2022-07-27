@@ -47,16 +47,12 @@
 				// }
 				let i = 0;
 				let time = setInterval(function() {
-
 					that.digit = parseFloat((that.digitFrom + dValue * i)).toFixed(that.digitFiex);
-
 					if (times == i) {
 						clearInterval(time);
 					}
 					i++;
-
 				}, that.speed)
-
 			}
 		},
 		created() {

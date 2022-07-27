@@ -1,9 +1,7 @@
 <template>
 	<view class="gsq_swipe_action">
-
 		<!-- 外层 -->
 		<view class="swipe_content">
-
 			<!-- 循环item -->
 			<view class="swipe_item" v-for="(v,i) in Tabs" :key="v.id">
 				<!-- 底部按钮 -->
@@ -24,12 +22,8 @@
 					@touchend.stop.prevent="touchend" @click="btnclass(i)" class="swipe_item_tp"
 					:style="{transform: (ismove & tindex==i) ? movex : 'translateX(0rpx)' }">
 					<slot>
-						
-					</slot>
-					<!-- <view>
-						{{v.typename}}
-					</view> -->
 
+					</slot>
 				</view>
 			</view>
 
@@ -289,8 +283,5 @@
 				}
 			}
 		}
-
-
-
 	}
 </style>

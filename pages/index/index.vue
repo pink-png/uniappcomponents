@@ -4,12 +4,22 @@
 			{{item.ZH}}
 		</view>
 	</scroll-view> -->
-	<view >
-		<circle percent="60">
+	<view style="width: 100vw; height: 100vh;">
+<!-- 		<circle percent="60">
 			<view style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;">
 				60%
 			</view>
-		</circle>
+		</circle> -->
+		
+<!-- 		<mark-slide-list :list="[{title: 'xxx', image:'xxx', surname: 'xxx',detail:'xxx', rightDetail: 'xxx', slide_x: 0},{title: 'xxx', image:'xxx', surname: 'xxx',detail:'xxx', rightDetail: 'xxx', slide_x: 0}]"
+		:button="[{title: 'xxx', background:'xxx'},{title: 'xxx', background:'xxx'}]"
+		
+		></mark-slide-list> -->
+		
+		<!-- <gsq-swipe-action></gsq-swipe-action> -->
+		
+		<!-- <gsq-Scroll-text-bar></gsq-Scroll-text-bar> -->
+		
 	</view>
 	
 </template>

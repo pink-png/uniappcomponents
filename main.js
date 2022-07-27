@@ -73,9 +73,11 @@ import GsqPassworldInputDiy from '@/components/gsq-passworldinput-diy/gsq-passwo
 import GsqSwitchDiy from '@/components/gsq-switch-diy/gsq-switch-diy.vue'
 import cCircle from "@/components/Your_Exios-Circle/Your_Exios-Circle.vue"
 import Circle from "@/components/circle/circle.vue"
+import GsqScrollTextBar from "@/components/gsq-Scroll-text-bar/gsq-Scroll-text-bar.vue"
 
 
 
+Vue.component('GsqScrollTextBar',GsqScrollTextBar) // 文字滚动条
 Vue.component('Circle',Circle) // 进度环 全部可用
 Vue.component('cCircle',cCircle) // 进度环 不支持小程序
 Vue.component('GsqSwitchDiy',GsqSwitchDiy) // switch diy 颜色
@@ -92,7 +94,7 @@ Vue.component('MingPop', MingPop) //弹框1   - onReady生命周期才能直接�
 Vue.component('Vtabs', Vtabs) // 高级tab列表滑动可各种拓展
 Vue.component('HFromAlert', HFromAlert) //可输入提交弹框
 Vue.component('UniAddressSelector', UniAddressSelector) //城市列表选择需要配置数据
-Vue.component('MarkSlideList', MarkSlideList) //列表滑动操作   - 支付宝小程序不支持
+Vue.component('MarkSlideList', MarkSlideList) //列表滑动操作   - 小程序不支持
 Vue.component('CodeKeyBoard', CodeKeyBoard) //简易数字键盘
 Vue.component('DialogBox', DialogBox) //弹框2
 Vue.component('MxDatePicker', MxDatePicker) //多类型时间选择器

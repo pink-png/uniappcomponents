@@ -39,7 +39,7 @@
 			start: '',
 			end: '',
 			default: '',
-			placeholder:''
+			placeholder: ''
 		},
 		data() {
 			let defaultvalue = this.default;
@@ -479,6 +479,13 @@
 		color: $uni-text-color-grey;
 	}
 
+	picker-view {
+		width: 100%;
+		background: #fff;
+		height: 600rpx;
+		text-align: center;
+	}
+
 	.but {
 		background: #fff;
 		height: 80rpx;
@@ -495,12 +502,5 @@
 			float: right;
 			color: $uni-color-primary;
 		}
-	}
-
-	picker-view {
-		width: 100%;
-		background: #fff;
-		height: 600rpx;
-		text-align: center;
 	}
 </style>

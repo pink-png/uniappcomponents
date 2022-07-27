@@ -438,20 +438,14 @@
 			} = {}) {
 
 				var month = new Date().getMonth(); //月份
-
 				var all = [];
-
 				for (let i = count - 1; i >= 0; i--) {
 					var day = []; //天数   
-
 					var week = 0; //星期
-
 					var date = {}; //
-
 					for (var j = 0; j < new Date(year, month + 1, 0).getDate(); j++) {
 						day.push(j + 1);
 					}
-
 					date = {
 						year: year,
 						month: month + 1,

@@ -125,7 +125,6 @@
 								title: '二维码保存成功',
 								icon: 'none',
 								duration: 2000,
-
 							});
 						}
 					});
