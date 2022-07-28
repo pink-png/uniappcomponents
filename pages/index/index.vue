@@ -30,6 +30,8 @@
 				count : 0,
 				countxxx : this.count / 100,
 				Componentname: [
+					{EN: 'GsqAnimation',ZH: '封装的动画组件'},
+					{EN: 'GsqScrollTextBar',ZH: '文字滚动条'},
 					{EN: 'circle',ZH: '进度圆全端可用'},
 					{EN: 'cCircle',ZH: '进度圆小程序无效'},
 					{EN: 'GsqPassworldInputDiy',ZH: '自定义密码输入框'},

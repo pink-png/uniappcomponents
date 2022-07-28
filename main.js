@@ -74,9 +74,10 @@ import GsqSwitchDiy from '@/components/gsq-switch-diy/gsq-switch-diy.vue'
 import cCircle from "@/components/Your_Exios-Circle/Your_Exios-Circle.vue"
 import Circle from "@/components/circle/circle.vue"
 import GsqScrollTextBar from "@/components/gsq-Scroll-text-bar/gsq-Scroll-text-bar.vue"
+import GsqAnimation from "@/components/gsq-Animation/gsq-Animation.vue"
 
 
-
+Vue.component('GsqAnimation', GsqAnimation) // 封装的动画组件
 Vue.component('GsqScrollTextBar',GsqScrollTextBar) // 文字滚动条
 Vue.component('Circle',Circle) // 进度环 全部可用
 Vue.component('cCircle',cCircle) // 进度环 不支持小程序
