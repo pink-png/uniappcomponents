@@ -20,6 +20,7 @@
 		
 		<!-- <gsq-Scroll-text-bar></gsq-Scroll-text-bar> -->
 		
+		<gsq-progress-bar></gsq-progress-bar>
 	</view>
 	
 </template>

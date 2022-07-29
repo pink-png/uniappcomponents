@@ -75,8 +75,10 @@ import cCircle from "@/components/Your_Exios-Circle/Your_Exios-Circle.vue"
 import Circle from "@/components/circle/circle.vue"
 import GsqScrollTextBar from "@/components/gsq-Scroll-text-bar/gsq-Scroll-text-bar.vue"
 import GsqAnimation from "@/components/gsq-Animation/gsq-Animation.vue"
+import GsqProgressBar from "@/components/gsq-progress-bar/gsq-progress-bar.vue"
 
 
+Vue.component('GsqProgressBar', GsqProgressBar) // 进度条拖拽
 Vue.component('GsqAnimation', GsqAnimation) // 封装的动画组件
 Vue.component('GsqScrollTextBar',GsqScrollTextBar) // 文字滚动条
 Vue.component('Circle',Circle) // 进度环 全部可用
